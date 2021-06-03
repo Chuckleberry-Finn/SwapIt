@@ -1,0 +1,6 @@
+name=Swap It
+poster=poster.png
+id=SwapIt
+description= Does the following:
+description=   Equipped weapons will swap places with hotslotted weapons instead of being put away entirely.
+description=   Activating an empty hotslot will attach the equipped item if possible.

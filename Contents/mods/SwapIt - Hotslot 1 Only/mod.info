@@ -1,0 +1,7 @@
+name=Swap It (Hotslot 1 Only)
+poster=poster.png
+id=SwapIt1Only
+description=   Use this INSTEAD of the main file.
+description=   Does the following:
+description=   Equipped weapons will swap places with weapons on hotslot 1 instead of being put away entirely.
+description=   Activating an hotslot 1 while empty will attach the equipped item if possible.
