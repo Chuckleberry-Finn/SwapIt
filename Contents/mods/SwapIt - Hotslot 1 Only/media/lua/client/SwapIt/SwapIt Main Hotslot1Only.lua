@@ -20,13 +20,13 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 		if slotIndex==1 then
 			local slot = self.availableSlot[slotIndex]
 			item = self.chr:getPrimaryHandItem()
-			if self:canBeAttached(slot, item) then
+			if item and self:canBeAttached(slot, item) then
 				self:attachItem(item, slot.def.attachments[item:getAttachmentType()], slotIndex, slot.def, true)
 			end
 		end
 	return end
 	-------------------------------------------------------
-	
+
 	------ GEAR PATCH -------------------------------------
 	if SwapItActiveMods["GEARCORE"] then
 
