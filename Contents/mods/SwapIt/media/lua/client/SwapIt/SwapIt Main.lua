@@ -15,8 +15,8 @@ Events.OnGameStart.Add(PATCH_FOR_MODS)
 function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after hitting 1234(etc) and equips/activates the item in that slot
 	local item = self.attachedItems[slotIndex]
 
+	--- SwapIt --- check if there is an item equipped and assign it if possible ---
 	if not item then
-		--- SwapIt --- check if there is an item equipped and assign it if possible ---
 		local slot = self.availableSlot[slotIndex]
 		item = self.chr:getPrimaryHandItem()
 		if item and self:canBeAttached(slot, item) then
@@ -24,6 +24,7 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 		end
 		return
 	end
+	-------------------------------------------------------
 
 	------ GEAR PATCH -------------------------------------
 	if SwapItActiveMods["GEARCORE"] then

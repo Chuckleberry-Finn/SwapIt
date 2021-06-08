@@ -1,5 +1,17 @@
 require "Hotbar/ISHotbar"
 
+SwapItActiveMods = {}
+function PATCH_FOR_MODS()
+	print("SwapIt Checking For Patches:")
+	local activeModIDs = getActivatedMods()
+	for i=1,activeModIDs:size() do
+		local modID = activeModIDs:get(i-1)
+		print("- Mod: "..modID)
+		SwapItActiveMods[modID] = true
+	end
+end
+Events.OnGameStart.Add(PATCH_FOR_MODS)
+
 function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after hitting 1234(etc) and equips/activates the item in that slot
 	local item = self.attachedItems[slotIndex]
 
@@ -13,7 +25,28 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 			end
 		end
 	return end
-	------------------------------------------------------------------------------
+	-------------------------------------------------------
+	
+	------ GEAR PATCH -------------------------------------
+	if SwapItActiveMods["GEARCORE"] then
+
+		if item:getCategory() == "Clothing" then
+			if item:isEquipped() then
+				ISTimedActionQueue.add(ISUnequipAction:new(self.chr, item, 50))
+			else
+				ISTimedActionQueue.add(ISWearClothing:new(self.chr, item, 50))
+			end
+			return
+		end
+
+		if item:IsFood() and item:getHungerChange() < 0 then
+			if self.chr:getMoodles():getMoodleLevel(MoodleType.FoodEaten) < 3 or self.chr:getNutrition():getCalories() < 1000 then
+				ISTimedActionQueue.add(ISEatFoodAction:new(self.chr, item, 0.25));
+				return
+			end
+		end
+	end
+	----------------------------------------------------------
 
 	if item:getAttachedSlot() ~= slotIndex then
 		error "item:getAttachedSlot() ~= slotIndex"
