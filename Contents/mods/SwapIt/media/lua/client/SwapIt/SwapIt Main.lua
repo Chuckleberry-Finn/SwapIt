@@ -1,17 +1,50 @@
-require "Hotbar/ISHotbar"
+require("Hotbar/ISHotbar")
+
+SwapItActiveMods = {}
+function PATCH_FOR_MODS()
+	print("SwapIt Checking For Patches:")
+	local activeModIDs = getActivatedMods()
+	for i=1,activeModIDs:size() do
+		local modID = activeModIDs:get(i-1)
+		print("- Mod: "..modID)
+		SwapItActiveMods[modID] = true
+	end
+end
+Events.OnGameStart.Add(PATCH_FOR_MODS)
 
 function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after hitting 1234(etc) and equips/activates the item in that slot
 	local item = self.attachedItems[slotIndex]
 
-	--- SwapIt --- check if there is an item equipped and assign it if possible ----
 	if not item then
+		--- SwapIt --- check if there is an item equipped and assign it if possible ---
 		local slot = self.availableSlot[slotIndex]
 		item = self.chr:getPrimaryHandItem()
-		if self:canBeAttached(slot, item) then
+		if item and self:canBeAttached(slot, item) then
 			self:attachItem(item, slot.def.attachments[item:getAttachmentType()], slotIndex, slot.def, true)
 		end
-	return end
-	-----------------------------------------------------------------------------
+		return
+	end
+
+	------ GEAR PATCH -------------------------------------
+	if SwapItActiveMods["GEARCORE"] then
+
+		if item:getCategory() == "Clothing" then
+			if item:isEquipped() then
+				ISTimedActionQueue.add(ISUnequipAction:new(self.chr, item, 50))
+			else
+				ISTimedActionQueue.add(ISWearClothing:new(self.chr, item, 50))
+			end
+			return
+		end
+
+		if item:IsFood() and item:getHungerChange() < 0 then
+			if self.chr:getMoodles():getMoodleLevel(MoodleType.FoodEaten) < 3 or self.chr:getNutrition():getCalories() < 1000 then
+				ISTimedActionQueue.add(ISEatFoodAction:new(self.chr, item, 0.25));
+				return
+			end
+		end
+	end
+	----------------------------------------------------------
 
 	if item:getAttachedSlot() ~= slotIndex then
 		error "item:getAttachedSlot() ~= slotIndex"
@@ -25,7 +58,7 @@ end
 
 
 
-function ISHotbar:equipItem(item) -- hotbar equip logic - called after activating the slot
+function ISHotbar:equipItem(item) --hotbar equip logic - called after activating the slot
 	ISInventoryPaneContextMenu.transferIfNeeded(self.chr, item)
 
 	local equip = true
@@ -49,20 +82,21 @@ function ISHotbar:equipItem(item) -- hotbar equip logic - called after activatin
 			ISTimedActionQueue.add(ISUnequipAction:new(self.chr, primary, 50))
 		end
 
-		---- SwapIt -- equipped weapon replaces hotslot called -----
+		----- SwapIt start ----- equipped weapon replaces to hotslot called ----
 		local i_slotinuse = item:getAttachedSlot()
 		local slot = self.availableSlot[i_slotinuse]
 
-		if(primary and not self:isInHotbar(primary) and self:canBeAttached(slot, primary)) then
+		if primary and not self:isInHotbar(primary) and self:canBeAttached(slot, primary) then
 			self:removeItem(item, false)--false = don't run animation
 			self:attachItem(primary, slot.def.attachments[primary:getAttachmentType()], i_slotinuse, slot.def, true)
 		end
-		-------------------------------------------------------------
+		---------------------------------------------------------------------
 
 		ISTimedActionQueue.add(ISEquipWeaponAction:new(self.chr, item, 20, true, item:isTwoHandWeapon()))
+
 	end
 
 	self.chr:getInventory():setDrawDirty(true)
 	getPlayerData(self.chr:getPlayerNum()).playerInventory:refreshBackpacks()
---	self:refresh()
+	--	self:refresh()
 end
