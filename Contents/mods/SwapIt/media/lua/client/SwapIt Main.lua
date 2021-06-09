@@ -77,9 +77,11 @@ function ISHotbar:equipItem(item) --hotbar equip logic - called after activating
 		local i_slotinuse = item:getAttachedSlot()
 		local slot = self.availableSlot[i_slotinuse]
 
-		if primary and not self:isInHotbar(primary) and self:canBeAttached(slot, primary) then
-			self:removeItem(item, false)--false = don't run animation
-			self:attachItem(primary, slot.def.attachments[primary:getAttachmentType()], i_slotinuse, slot.def, true)
+		if SwapItConfig.config["HotBar "..i_slotinuse] == true then
+			if primary and not self:isInHotbar(primary) and self:canBeAttached(slot, primary) then
+				self:removeItem(item, false)--false = don't run animation
+				self:attachItem(primary, slot.def.attachments[primary:getAttachmentType()], i_slotinuse, slot.def, true)
+			end
 		end
 		---------------------------------------------------------------------
 
