@@ -1,26 +1,16 @@
 require("Hotbar/ISHotbar")
 
-SwapItActiveMods = {}
-function PATCH_FOR_MODS()
-	print("SwapIt Checking For Patches:")
-	local activeModIDs = getActivatedMods()
-	for i=1,activeModIDs:size() do
-		local modID = activeModIDs:get(i-1)
-		print("- Mod: "..modID)
-		SwapItActiveMods[modID] = true
-	end
-end
-Events.OnGameStart.Add(PATCH_FOR_MODS)
-
 function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after hitting 1234(etc) and equips/activates the item in that slot
 	local item = self.attachedItems[slotIndex]
 
 	--- SwapIt --- check if there is an item equipped and assign it if possible ---
 	if not item then
-		local slot = self.availableSlot[slotIndex]
-		item = self.chr:getPrimaryHandItem()
-		if item and self:canBeAttached(slot, item) then
-			self:attachItem(item, slot.def.attachments[item:getAttachmentType()], slotIndex, slot.def, true)
+		if SwapItConfig.config["HotBar "..slotIndex] == true then
+			local slot = self.availableSlot[slotIndex]
+			item = self.chr:getPrimaryHandItem()
+			if item and self:canBeAttached(slot, item) then
+				self:attachItem(item, slot.def.attachments[item:getAttachmentType()], slotIndex, slot.def, true)
+			end
 		end
 		return
 	end
