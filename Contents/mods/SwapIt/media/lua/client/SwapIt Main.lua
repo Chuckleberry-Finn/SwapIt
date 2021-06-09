@@ -5,7 +5,8 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 
 	--- SwapIt --- check if there is an item equipped and assign it if possible ---
 	if not item then
-		if SwapItConfig.config["HotBar "..slotIndex] == true then
+		local slotIndexID = "Hotbar "..slotIndex
+		if SwapItConfig.config[slotIndexID] == true then
 			local slot = self.availableSlot[slotIndex]
 			item = self.chr:getPrimaryHandItem()
 			if item and self:canBeAttached(slot, item) then
@@ -76,8 +77,8 @@ function ISHotbar:equipItem(item) --hotbar equip logic - called after activating
 		----- SwapIt start ----- equipped weapon replaces to hotslot called ----
 		local i_slotinuse = item:getAttachedSlot()
 		local slot = self.availableSlot[i_slotinuse]
-
-		if SwapItConfig.config["HotBar "..i_slotinuse] == true then
+		local slotIndexID = "Hotbar "..i_slotinuse
+		if SwapItConfig.config[slotIndexID] == true then
 			if primary and not self:isInHotbar(primary) and self:canBeAttached(slot, primary) then
 				self:removeItem(item, false)--false = don't run animation
 				self:attachItem(primary, slot.def.attachments[primary:getAttachmentType()], i_slotinuse, slot.def, true)
