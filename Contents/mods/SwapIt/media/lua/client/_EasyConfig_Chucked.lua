@@ -74,11 +74,11 @@ end
 -- -- -- -- -- >
 
 
-local MainOptions_create = MainOptions.create
+SwapIt_MainOptions_create = MainOptions.create
 
 function MainOptions:create() -- override
 
-	MainOptions_create(self) -- call original
+	SwapIt_MainOptions_create(self) -- call original
 
 	function self.gameOptions:toUI()
 		for _,option in ipairs(self.options) do
@@ -282,9 +282,18 @@ EasyConfig_Chucked.saveConfig = function()
 			print("modId: "..modId.." saving")
 			for gameOptionName,_ in pairs(config) do
 				local menuEntry = configMenu[gameOptionName]
+
 				if menuEntry.selectedLabel then
-					fileWriter:write(gameOptionName.."="..menuEntry.selectedLabel..",\r")
+					local menuEntry_selectedLabel = menuEntry.selectedLabel
+					if type(menuEntry.selectedLabel) == "boolean" then
+						menuEntry_selectedLabel = tostring(menuEntry_selectedLabel)
+					end
+					fileWriter:write(gameOptionName.."="..menuEntry_selectedLabel..",\r")
 				else
+					local menuEntry_selectedValue = menuEntry.selectedValue
+					if type(menuEntry.selectedValue) == "boolean" then
+						menuEntry_selectedValue = tostring(menuEntry_selectedValue)
+					end
 					fileWriter:write(gameOptionName.."="..menuEntry.selectedValue..",\r")
 				end
 			end
