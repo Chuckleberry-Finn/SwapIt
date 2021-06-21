@@ -17,8 +17,10 @@ description=
 description=
 description= [url=https://github.com/ChuckTheSheep/SwapIt]Github for SwapIt[/url]
 description=
-description=
 description= [img]https://i.imgur.com/p7Fv1Z6.gif[/img]
+description= 
+description= [url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Chuck[/b][/url]
 description=
-tags=
+description=Tags:B41,Tweak
+tags=Build 41;Tweak
 visibility=public
