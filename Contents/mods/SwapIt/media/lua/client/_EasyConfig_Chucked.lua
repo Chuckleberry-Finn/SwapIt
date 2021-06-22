@@ -296,7 +296,7 @@ EasyConfig_Chucked.saveConfig = function()
 						if type(menuEntry.selectedValue) == "boolean" then
 							menuEntry_selectedValue = tostring(menuEntry_selectedValue)
 						end
-						fileWriter:write(gameOptionName.."="..menuEntry.selectedValue..",\r")
+						fileWriter:write(gameOptionName.."="..menuEntry_selectedValue..",\r")
 					end
 				end
 				fileWriter:close()
