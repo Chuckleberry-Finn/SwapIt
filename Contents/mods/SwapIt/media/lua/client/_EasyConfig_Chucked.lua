@@ -240,8 +240,6 @@ function MainOptions:create() -- override
 		self.addY = self.addY + 30
 	end
 
-
-	self.addY = 0
 	local modPageAdded = false
 	for modId,mod in pairs(EasyConfig_Chucked.mods) do
 		if (not mod.menuSpecificAccess) or (getPlayer() and mod.menuSpecificAccess=="ingame") or (not getPlayer() and mod.menuSpecificAccess=="mainmenu") then
