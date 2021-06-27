@@ -266,3 +266,68 @@ function MainOptions:create() -- override
 
 	end
 end
+
+
+EasyConfig_Chucked.saveConfig = function()
+	for modId,mod in pairs(EasyConfig_Chucked.mods) do
+		local config = mod.config
+		local configMenu = mod.configMenu
+		local configFile = "media/config/"..modId..".config"
+		local fileWriter = getModFileWriter(modId, configFile, true, false)
+		if fileWriter then
+			print("modId: "..modId.." saving")
+			for gameOptionName,_ in pairs(config) do
+				local menuEntry = configMenu[gameOptionName]
+
+				if menuEntry.selectedLabel then
+					local menuEntry_selectedLabel = menuEntry.selectedLabel
+					if type(menuEntry.selectedLabel) == "boolean" then
+						menuEntry_selectedLabel = tostring(menuEntry_selectedLabel)
+					end
+					fileWriter:write(gameOptionName.."="..menuEntry_selectedLabel..",\r")
+				else
+					local menuEntry_selectedValue = menuEntry.selectedValue
+					if type(menuEntry.selectedValue) == "boolean" then
+						menuEntry_selectedValue = tostring(menuEntry_selectedValue)
+					end
+					fileWriter:write(gameOptionName.."="..menuEntry_selectedValue..",\r")
+				end
+			end
+			fileWriter:close()
+		end
+	end
+end
+EasyConfig_Chucked.loadConfig = function()
+	for modId,mod in pairs(EasyConfig_Chucked.mods) do
+		local config = EasyConfig_Chucked.mods[modId].config
+		local configMenu = EasyConfig_Chucked.mods[modId].configMenu
+		local configFile = "media/config/"..modId..".config"
+		local fileReader = getModFileReader(modId, configFile, false)
+		if fileReader then
+			print("modId: "..modId.." loading")
+			for _,_ in pairs(config) do
+				local line = fileReader:readLine()
+				if not line then break end
+				for gameOptionName,label in string.gmatch(line, "([^=]*)=([^=]*),") do
+					local menuEntry = configMenu[gameOptionName]
+					if menuEntry then
+
+						if menuEntry.options then
+							if menuEntry.optionsKeys[label] then
+								menuEntry.selectedIndex = menuEntry.optionsKeys[label][1]
+								menuEntry.selectedValue = menuEntry.optionsKeys[label][2]
+								menuEntry.selectedLabel = label
+							end
+						else
+							if label == "true" then menuEntry.selectedValue = true
+							elseif label == "false" then menuEntry.selectedValue = false
+							else menuEntry.selectedValue = tonumber(label) end
+						end
+						config[gameOptionName] = menuEntry.selectedValue
+					end
+				end
+			end
+			fileReader:close()
+		end
+	end
+end
