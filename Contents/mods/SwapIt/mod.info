@@ -6,3 +6,4 @@ description=  Equipped weapons will swap places with hotslotted weapons instead 
 description=    Example: If you have Weapon A on your belt and Weapon B in hand- selecting weapon A will equip weapon A and put weapon B on your belt.
 description=  Activating an empty hotslot will attach the equipped item if possible.
 description=  Individual hotslots can be toggled via options menu.
+require=EasyConfigChucked
