@@ -11,7 +11,6 @@ description= [/list]
 description=
 description=
 description= [b]Supports:[/b] G.E.A.R.
-description=
 description= [b]Warning:[/b] Other mods that interact with hotslots or item equipping may cause issues- please post a comment describing the issue and any mods you may also use. Patches for said mods may be possible.
 description=
 description=
@@ -20,6 +19,7 @@ description=
 description= [img]https://i.imgur.com/p7Fv1Z6.gif[/img]
 description= 
 description= [url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Chuck[/b][/url]
+description= [url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Nurver/Breadfeet[/b][/url]
 description=
 description=Tags:B41,Tweak
 tags=Build 41;Tweak
