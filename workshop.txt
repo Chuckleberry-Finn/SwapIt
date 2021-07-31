@@ -22,5 +22,5 @@ description= [url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/Gx
 description= [url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Nurver/Breadfeet[/b][/url]
 description=
 description=Tags:B41,Tweak
-tags=Build 41;Tweak
+tags=Build 41;Interface
 visibility=public
