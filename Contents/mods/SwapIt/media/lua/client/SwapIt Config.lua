@@ -38,7 +38,6 @@ end
 --run on Lua load
 loadHotSlotsToMenu()
 
---load mod into EasyConfig
-if EasyConfig_Chucked then
-	EasyConfig_Chucked.addMod(SwapItConfig)
-end
+EasyConfig_Chucked = EasyConfig_Chucked or {}
+EasyConfig_Chucked.mods = EasyConfig_Chucked.mods or {}
+EasyConfig_Chucked.mods[SwapItConfig.modId] = SwapItConfig
