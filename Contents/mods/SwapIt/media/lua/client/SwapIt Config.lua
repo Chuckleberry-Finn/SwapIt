@@ -40,5 +40,5 @@ loadHotSlotsToMenu()
 
 --load mod into EasyConfig
 if EasyConfig_Chucked then
-	EasyConfig_Chucked.addMod(SwapItConfig.modId, SwapItConfig.name, SwapItConfig.config, SwapItConfig.menu, "SWAPIT")
+	EasyConfig_Chucked.addMod(SwapItConfig)
 end
