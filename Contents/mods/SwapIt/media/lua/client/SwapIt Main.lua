@@ -45,7 +45,10 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 		item:setActivated(not item:isActivated())
 		return
 	end
-	self:equipItem(item)
+
+	if item:getContainer() then
+		self:equipItem(item)
+	end
 end
 
 

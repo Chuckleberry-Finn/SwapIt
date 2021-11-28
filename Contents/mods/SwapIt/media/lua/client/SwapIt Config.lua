@@ -21,6 +21,9 @@ SwapItConfig.menu = {}
 
 function loadHotSlotsToMenu()
 	local maxSlots = 5
+	if SwapItActiveMods["Authentic Z - Current"] then
+		maxSlots = 10
+	end
 	if SwapItActiveMods["GEARCORE"] then
 		maxSlots = 15
 	end
