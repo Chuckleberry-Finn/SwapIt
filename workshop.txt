@@ -10,7 +10,16 @@ description= [*]Individual hotslots can be toggled via options menu.
 description= [/list]
 description=
 description=
-description= [b]Supports:[/b] G.E.A.R.
+description=[h1]If you're having an issue or encountering errors:[/h1]
+description=[h3]First, [b]resubscribe[/b] to this mod, and any related mod.[/h3]
+description=(This will force a download of the latest version.)
+description=[b]If the problem persists, please supply a error log, which can be found here:[/b]
+description=[quote]`C:\Users\<username>\Zomboid\console.txt`[/quote]
+description=Uploaded to any online text viewer, [url=https://pastebin.com/]pastebin[/url] is recomended.
+description=Share the link in a comment below.
+description=
+description=
+description= [b]Supports:[/b] G.E.A.R., AuthenticZ
 description= [b]Warning:[/b] Other mods that interact with hotslots or item equipping may cause issues- please post a comment describing the issue and any mods you may also use. Patches for said mods may be possible.
 description=
 description=
