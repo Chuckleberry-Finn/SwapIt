@@ -25,10 +25,9 @@ description=
 description=
 description= [url=https://github.com/ChuckTheSheep/SwapIt]Github for SwapIt[/url]
 description=
-description= [img]https://i.imgur.com/p7Fv1Z6.gif[/img]
-description=
-description= [url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Chuck[/b][/url]
-description= [url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Nurver/Breadfeet[/b][/url]
+description=[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
+description=[img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/supportLogo_alt.png[/img]
+description=[url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Chuck[/b][/url] [url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting nurver[/b][/url]
 description=
 description=
 description=[quote]© Copyright 2021 Chuck & nurver. This item is not authorized for posting on Steam, except under the Steam account(s) https://steamcommunity.com/id/Chuckleberry_Finn & https://steamcommunity.com/id/itsmedirtydan.[/quote]
