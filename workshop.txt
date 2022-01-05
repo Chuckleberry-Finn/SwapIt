@@ -1,14 +1,15 @@
 version=1
 id=2366717227
 title=Swap It
-description= [b]Does the following:[/b]
-description= [list]
-description= [*]Equipped weapons will swap places with hotslotted weapons instead of being put away entirely.
-description= [*] Example: If you have Weapon A on your belt and Weapon B in hand- selecting weapon A will equip weapon A and put weapon B on your belt.
-description= [*]Activating an empty hotslot will attach the equipped item if possible.
-description= [*]Individual hotslots can be toggled via options menu.
-description= [/list]
+description=[b]Does the following:[/b]
+description=[list]
+description=[*]Equipped weapons will swap places with hotslotted weapons instead of being put away entirely.
+description=[*] Example: If you have Weapon A on your belt and Weapon B in hand- selecting weapon A will equip weapon A and put weapon B on your belt.
+description=[*]Activating an empty hotslot will attach the equipped item if possible.
+description=[*]Individual hotslots can be toggled via options menu.
+description=[/list]
 description=
+description=[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
 description=
 description=[h1]If you're having an issue or encountering errors:[/h1]
 description=[h3]First, [b]resubscribe[/b] to this mod, and any related mod.[/h3]
@@ -18,21 +19,20 @@ description=[quote]`C:\Users\<username>\Zomboid\console.txt`[/quote]
 description=Uploaded to any online text viewer, [url=https://pastebin.com/]pastebin[/url] is recomended.
 description=Share the link in a comment below.
 description=
-description=
-description= [b]Supports:[/b] G.E.A.R., AuthenticZ
-description= [b]Warning:[/b] Other mods that interact with hotslots or item equipping may cause issues- please post a comment describing the issue and any mods you may also use. Patches for said mods may be possible.
-description=
-description=
-description= [url=https://github.com/ChuckTheSheep/SwapIt]Github for SwapIt[/url]
-description=
-description=[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
-description=[img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/supportLogo_alt.png[/img]
-description=[url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Chuck[/b][/url] [url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting nurver[/b][/url]
+description=[url=https://github.com/ChuckTheSheep/SwapIt]Github for SwapIt[/url]
+description=[b]Supports:[/b] G.E.A.R., AuthenticZ
+description=[b]Warning:[/b] Other mods that interact with hotslots or item equipping may cause issues- please post a comment describing the issue and any mods you may also use. Patches for said mods may be possible.
 description=
 description=
+description=
+description=
+description=Workshop ID: 2366717227
+description=Mod ID: SwapIt
 description=[quote]© Copyright 2021 Chuck & nurver. This item is not authorized for posting on Steam, except under the Steam account(s) https://steamcommunity.com/id/Chuckleberry_Finn & https://steamcommunity.com/id/itsmedirtydan.[/quote]
 description=[quote]⚠ Redistribution of this mod without explicit permission from the original creator(s) is prohibited under any circumstances. This includes, but is not limited to, uploading this mod to the Steam Workshop or any other site, redistribution as part of another mod, mod pack, server pack or the distribution of modified versions. [/quote]
 description=
-description=Tags:B41,Tweak
+description=
+description=[img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/supportLogo_alt.png[/img]
+description=[url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Chuck[/b][/url] [url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting nurver[/b][/url]
 tags=Build 41;Interface;Multiplayer
 visibility=public
