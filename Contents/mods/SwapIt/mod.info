@@ -1,5 +1,6 @@
 name=SwapIt
 poster=poster.png
+icon=icon.png
 id=SwapIt
 description= Does the following:[/b]
 description=  Equipped weapons will swap places with hotslotted weapons instead of being put away entirely.
