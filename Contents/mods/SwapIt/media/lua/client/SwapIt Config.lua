@@ -27,13 +27,14 @@ function loadHotSlotsToMenu()
 	if SwapItActiveMods["GEARCORE"] then
 		maxSlots = 15
 	end
-	SwapItConfig.menu["modTooltipSwap"] = {type = "Text", text = "Swap With Held: Trade held item with the hot-slotted item.\nDirect Add: Held items can be added to unused hot-slots.", a=0.55, customX=-90}
-	SwapItConfig.menu["modTooltipSpace"] = {type = "Space"}
+	SwapItConfig.menu.modTooltipSwap = {type = "Text", a=0.55, customX=-90}
+	SwapItConfig.menu.modTooltipDirect = {type = "Text", a=0.55, customX=-90}
+	SwapItConfig.menu.modTooltipSpace = {type = "Space"}
 	for slot=1, maxSlots do
-		local readOut = "Hotbar "..slot
-		SwapItConfig.menu["swap_"..readOut] = {type = "Tickbox", title = "Hotslot "..slot.." - Swap With Held ", tooltip = "", a=0.6}
+		local readOut = "Hotbar"..slot
+		SwapItConfig.menu["swap_"..readOut] = {type = "Tickbox", tooltip = "", a=0.6}
 		SwapItConfig.config["swap_"..readOut] = true
-		SwapItConfig.menu["direct_"..readOut] = {type = "Tickbox", title = "Hotslot "..slot.." - Direct Add", tooltip = "", a=0.6}
+		SwapItConfig.menu["direct_"..readOut] = {type = "Tickbox", tooltip = "", a=0.6}
 		SwapItConfig.config["direct_"..readOut] = true
 		SwapItConfig.menu["space"..readOut] = {type = "Space"}
 	end
