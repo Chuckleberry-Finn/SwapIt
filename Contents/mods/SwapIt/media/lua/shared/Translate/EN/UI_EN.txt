@@ -1,5 +1,5 @@
 UI_EN = {
-
+    UI_ConfigMODID_SwapIt = "SwapIt"
     UI_Config_modTooltipSwap = "Swap With Held: Trade held item with the hot-slotted item."
     UI_Config_modTooltipDirect = "Direct Add: Held items can be added to unused hot-slots."
 

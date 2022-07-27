@@ -16,7 +16,6 @@ PATCH_FOR_MODS()
 SwapItConfig = {}
 SwapItConfig.config = {}
 SwapItConfig.modId = "SwapIt" -- needs to the same as in your mod.info
-SwapItConfig.name = "SwapIt" -- the name that will be shown in the MOD tab
 SwapItConfig.menu = {}
 
 function loadHotSlotsToMenu()
