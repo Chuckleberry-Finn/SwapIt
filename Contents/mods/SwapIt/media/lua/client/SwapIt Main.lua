@@ -8,9 +8,11 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 		local slotIndexID = "direct_Hotbar"..slotIndex
 		if SwapItConfig.config[slotIndexID] == true then
 			local slot = self.availableSlot[slotIndex]
-			item = self.chr:getPrimaryHandItem()
-			if item and self:canBeAttached(slot, item) then
-				self:attachItem(item, slot.def.attachments[item:getAttachmentType()], slotIndex, slot.def, true)
+			if slot then
+				item = self.chr:getPrimaryHandItem()
+				if item and self:canBeAttached(slot, item) then
+					self:attachItem(item, slot.def.attachments[item:getAttachmentType()], slotIndex, slot.def, true)
+				end
 			end
 		end
 		return
@@ -81,7 +83,7 @@ function ISHotbar:equipItem(item) --hotbar equip logic - called after activating
 		local i_slotinuse = item:getAttachedSlot()
 		local slot = self.availableSlot[i_slotinuse]
 		local slotIndexID = "swap_Hotbar"..i_slotinuse
-		if SwapItConfig.config[slotIndexID] == true then
+		if slot and SwapItConfig.config[slotIndexID] == true then
 			if primary and not self:isInHotbar(primary) and self:canBeAttached(slot, primary) then
 				self:removeItem(item, false)--false = don't run animation
 				self:attachItem(primary, slot.def.attachments[primary:getAttachmentType()], i_slotinuse, slot.def, true)
