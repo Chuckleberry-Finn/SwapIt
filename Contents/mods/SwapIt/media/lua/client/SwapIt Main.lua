@@ -99,3 +99,46 @@ function ISHotbar:equipItem(item) --hotbar equip logic - called after activating
 	getPlayerData(self.chr:getPlayerNum()).playerInventory:refreshBackpacks()
 	--	self:refresh()
 end
+
+
+
+
+-------- Override for weird SuperbSurvivors spammy error ----------
+--...................,,,,,,,,,,,,,,,,,,,,,,,,,,,,..................
+--,...             ,...., ♡ Love you Nolan ♡ .......   %%@&@%    ..
+--..,.. #%#%%%%%%%, .,,,,,,,,,,,,,,,,,,,..........  /(&&&&&@@%@@@
+--,,. #%%%%%(%%#%%&% .,,,,,,,,,,,,,..............  (#&&%%#%%%&@@@.
+--,,.(&%%%%#%,%#%%%## ......,,................,.. ,(((((#(%%&%&@@,
+--,,. (//(((#(*.**,//(  %%%%*,/,#%%*/    ........ */(/(((#%%%&&@@
+--,,.  //(//*,,/**,,,   &%%(%%%&&&&&&&&&&*  ....   (/(#*/(((###&  .
+--,...,.  */*,,**///,   %&&#&&%%%%%%%%%&&&&&(   &  %#((//***/(# %
+--..,,,,,.  .*./*((@@@   %%%&&&&&&&&&&%%%&&& (%&#&@@&*#,*,*     @@
+--.,,,,,,,,,../    @@@&  &&%&&&&&&&&%&&&&  #&&#&&&%@#        @&@@@@
+--,,,,,,,,,,. #%%%(%@%/  .%%%%&%%%&&&%&  #%%&&&&&&&&     %&&&&& &@@
+--,,,,,,,,,..  &%%(&%%%   #&&&&%&&%%  *%#%     &#&@%& *&&&&@( @@@@@
+--,,,,,,,,.....  %%%&%%    &%%%&&&, %%% *..* ** %(& %@&&@& @@@@&@@&
+--,,,,,,,......, .%#%###&   &%%&  ##%%@ **...,*,  %&@@& @@@@@&@@@@&
+--,,,,,,,....,,.. (%&#%(#%%  %  #%&&&&#& *,.,,.*/ @&((&&@@@@&@@@@@@
+--,,,,,,....,..... *%&&#%%%% %(%&&&%&&&@  /,*,.  % @@@@&&@@&@@&&@@@
+--,,,,,,.....,,....  %&&&% (#%&&&&@&@@   @&   &&&%&# &@@@@&@@@@@@&@
+--.,,,,,......,,,.,..  %  %%%%%&%@@, &% @&(,@&&%%&&&@@ @@@%@&&&&&@@
+--..,,,,,....,,..,,,,.  ,,*   &&@  &&&% @  ,&@&@&@%@%%&@ ,%@%@%@&@@
+--...,,,,,....,,,,   .*,..,( @  &&&&&& @@@&&&  @@@@@&%%&&@(@@&@@@@@
+--,....,,,,...   /.,*,,**//( (&&&&&%%%& @@@%&%&@  #@@@&&@&&@@&&@@@@
+--,,,...,,,,.    ..,,/./#(*# &&&&%&&%%%& @@&&&&&&&@%  @@@&@@@&@@@#@
+--,,,,,....,,. ,(. *.&   /% &&%&&&&#%####  &&%@@@%@@&@@  @@@@@@,@@&
+--...,,,,....,,      .  &&&&&%&&%%#%%#%%#/ %@&@@&&&&@&%&@&    #@@@@
+--,,,...,,,,....,,....  &&&%&%&%%%##%%%%%#%% &&@&&@&&@@@@@@@@@@@@@@
+--,,,,,,....,,,....,,.  &%%&&&%%#%%%& %%%#%#% @@&@@@@@&@@@@@@@&@@@@
+
+local swapItUtils = {}
+swapItUtils.text = "SwapIt doesn't work with SuperiorSurvivors, please disable SwapIt! To disable this Message, check warning message option in SuperiorSurvivors."
+function swapItUtils.applyPatchOverride()
+	local class, methodName = zombie.characters.IsoPlayer.class, "Say"
+	local createPatch = function(original_fn) return function(self, arg1, ...) if string.find(arg1, swapItUtils.text) then return end return original_fn(self, arg1, ...) end end
+	local metatable = __classmetatables[class]
+	local metatable__index = metatable.__index
+	local originalMethod = metatable__index[methodName]
+	metatable__index[methodName] = createPatch(originalMethod)
+end
+swapItUtils.applyPatchOverride()
