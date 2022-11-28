@@ -142,39 +142,3 @@ function swapItUtils.applyPatchOverride()
 	metatable__index[methodName] = createPatch(originalMethod)
 end
 swapItUtils.applyPatchOverride()
-
-
-
-local errorCount = -1
-local function parseErrors()
-	print("TESTING: parseErrors:")
-	local text = ""
-	local errors = getLuaDebuggerErrors()
-	for i = 1,errors:size() do
-		local str = errors:get(i-1)
-		str = str:gsub("\t", "    ")
-		text = text .. str .. "\n"
-	end
-	errorCount = getLuaDebuggerErrorCount()
-	print("@@@@@@@@@@\n",text,"\n@@@@@@@@@@")
-end
-
-local function test() DebugLogStream.printException() end
-Events.EveryTenMinutes.Add(test)
-local function compareErrorCount()
-	print("errorCount: "..errorCount.."  getLuaDebuggerErrorCount():"..getLuaDebuggerErrorCount())
-	if errorCount ~= getLuaDebuggerErrorCount() then
-		parseErrors()
-	end
-end
-Events.EveryTenMinutes.Add(compareErrorCount)
-
---[[
-local exception_original = Exception
-function Exception(...)
-
-	print("TESTING")
-
-	exception_original(...)
-end--]]
-
