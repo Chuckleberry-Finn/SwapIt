@@ -9,7 +9,17 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 		if SwapItConfig.config[slotIndexID] == true then
 			local slot = self.availableSlot[slotIndex]
 			if slot then
-				item = self.chr:getPrimaryHandItem()
+
+				--- FancyHandwork PATCH --- If the mod is enabled and its ModKey is pressed
+				if SwapItActiveMods["FancyHandwork"] and isFHModKeyDown() then
+					-- Get the secondary item
+					item = self.chr:getSecondaryHandItem()
+				else
+					-- Otherwise default to Primary
+					item = self.chr:getPrimaryHandItem()
+				end
+				-------------------------------------------------------
+
 				if item and self:canBeAttached(slot, item) then
 					self:attachItem(item, slot.def.attachments[item:getAttachmentType()], slotIndex, slot.def, true)
 				end
@@ -58,6 +68,9 @@ end
 function ISHotbar:equipItem(item) --hotbar equip logic - called after activating the slot
 	ISInventoryPaneContextMenu.transferIfNeeded(self.chr, item)
 
+	--- FancyHandwork PATCH --- true if Mod is installed and its ModKey is pressed. false or nil otherwise ---
+	local mod = (SwapItActiveMods["FancyHandwork"] and isFHModKeyDown())
+
 	local equip = true
 	if self.chr:getPrimaryHandItem() == item then
 		ISTimedActionQueue.add(ISUnequipAction:new(self.chr, item, 20))
@@ -69,7 +82,17 @@ function ISHotbar:equipItem(item) --hotbar equip logic - called after activating
 	end
 
 	if equip then
-		local primary = self.chr:getPrimaryHandItem()
+		--- FancyHandwork PATCH --- "primary" will be the secondary hand item if ModKey is pressed ---
+		local primary
+		if mod then
+			-- get the secondary item
+			primary = self.chr:getSecondaryHandItem()
+		else
+			-- get the primary item
+			primary = self.chr:getPrimaryHandItem()
+		end
+		--local primary = self.chr:getPrimaryHandItem() -- Deprecated
+		---------------------------------------------------------------------
 
 		if primary and self:isInHotbar(primary) then --if primary item then unequip
 			ISTimedActionQueue.add(ISUnequipAction:new(self.chr, primary, 20))
@@ -91,7 +114,8 @@ function ISHotbar:equipItem(item) --hotbar equip logic - called after activating
 		end
 		---------------------------------------------------------------------
 
-		ISTimedActionQueue.add(ISEquipWeaponAction:new(self.chr, item, 20, true, item:isTwoHandWeapon()))
+		--- FancyHandwork PATCH --- Use the "mod" variable instead of always true
+		ISTimedActionQueue.add(ISEquipWeaponAction:new(self.chr, item, 20, not mod, item:isTwoHandWeapon()))
 
 	end
 
