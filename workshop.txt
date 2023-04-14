@@ -24,8 +24,8 @@ description=[b]Supports:[/b] G.E.A.R., AuthenticZ, FancyHandwork
 description=[b]Warning:[/b] Other mods that interact with hotslots or item equipping may cause issues- please post a comment describing the issue and any mods you may also use. Patches for said mods may be possible.
 description=
 description=
-description=[quote]© Copyright 2021 Chuck & nurver. This item is not authorized for posting on Steam, except under the Steam account(s) https://steamcommunity.com/id/Chuckleberry_Finn & https://steamcommunity.com/id/itsmedirtydan.[/quote]
-description=[quote]⚠ Redistribution of this mod without explicit permission from the original creator(s) is prohibited under any circumstances. This includes, but is not limited to, uploading this mod to the Steam Workshop or any other site, redistribution as part of another mod, mod pack, server pack or the distribution of modified versions. ⚠[/quote]
+description=[table][tr][td]Copyright 2021 Chuck & nurver. This item is not authorized for posting on Steam, except under the Steam account(s) [url=https://steamcommunity.com/id/Chuckleberry_Finn]Chuckleberry_Finn[/url] & [url=https://steamcommunity.com/id/itsmedirtydan]itsmedirtydan[/url].[/td][/tr][/table]
+description=[table][tr][td][h3]Redistribution of this mod without explicit permission from the original creator(s) is prohibited under any circumstances. This includes, but is not limited to, uploading this mod to the Steam Workshop or any other site, redistribution as part of another mod, mod pack, server pack or the distribution of modified versions[/h3][/td][/tr][/table]
 description=
 description=[url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Chuck![/b][/url] [url=https://www.patreon.com/bePatron?u=17239488][img]https://raw.githubusercontent.com/ChuckTheSheep/Vanilla-Weapons-Expanded/main/Contents/mods/VanillaWeaponsExpanded/patreon/Patreon%20Logo.png[/img][/url]
 description=
