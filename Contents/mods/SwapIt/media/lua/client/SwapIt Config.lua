@@ -2,6 +2,11 @@ require "EasyConfigChucked1_Main"
 require "OptionScreens/ServerSettingsScreen"
 require "OptionScreens/SandBoxOptions"
 
+local modCountSystem = require "chuckleberryFinnModding_modCountSystem"
+if modCountSystem then modCountSystem.pullAndAddModID()
+else print("ERR: MISSING MOD: `ChuckleberryFinnAlertSystem` (Workshop ID: `3077900375`)") end
+
+
 SwapItActiveMods = {}
 function PATCH_FOR_MODS()
 	local activeModIDs = getActivatedMods()
