@@ -2,9 +2,10 @@ require "EasyConfigChucked1_Main"
 require "OptionScreens/ServerSettingsScreen"
 require "OptionScreens/SandBoxOptions"
 
-local modCountSystem = require "chuckleberryFinnModding_modCountSystem"
-if modCountSystem then modCountSystem.pullAndAddModID()
-else print("ERR: MISSING MOD: `ChuckleberryFinnAlertSystem` (Workshop ID: `3077900375`)") end
+if getActivatedMods():contains("ChuckleberryFinnAlertSystem") then
+	local modCountSystem = require "chuckleberryFinnModding_modCountSystem"
+	if modCountSystem then modCountSystem.pullAndAddModID() end
+else print("WARNING: Highly recommended to install `ChuckleberryFinnAlertSystem` (Workshop ID: `3077900375`) for latest news and updates.") end
 
 
 SwapItActiveMods = {}
