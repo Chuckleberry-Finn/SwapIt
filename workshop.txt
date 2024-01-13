@@ -3,30 +3,28 @@ id=2366717227
 title=Swap It
 description=[b]Does the following:[/b]
 description=[list]
-description=[*]Equipped weapons will swap places with hotslotted weapons instead of being put away entirely.
+description=[*]Equipped weapons will swap places with hotslotted weapons instead of being put away.
 description=[*] Example: If you have Weapon A on your belt and Weapon B in hand- selecting weapon A will equip weapon A and put weapon B on your belt.
 description=[*]Activating an empty hotslot will attach the equipped item if possible.
 description=[*]Individual hotslots can be toggled via options menu.
 description=[/list]
 description=
-description=[url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting nurver[/b][/url]
-description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi.png[/img][/url]
+description=[url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting nurver[/b][/url][url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi.png[/img][/url]
+description=[url=https://discord.gg/SReMnbV4V7][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/PZmodCommBanner2.png[/img][/url]
+description=[url=https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/bingo.png][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/readThrough.png[/img][/url]
+description=[img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/noModPacks.png[/img]
+description=[img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/bugHunt.png[/img]
+description=[quote][b]Windows:[/b] %userprofile%\Zomboid\console.txt[/quote]
+description=[quote][b]Mac/Linux:[/b] $User\Zomboid\console.txt[/quote]
+description=Upload this file [b]in entirety[/b] to [url=https://github.com/Chuckleberry-Finn?tab=repositories]Github[/url] as an issue.
+description=Share the link in a comment below if it is urgent.
 description=
-description=[h1]If you're having an issue or encountering errors:[/h1]
-description=[h3]First, [b]resubscribe[/b] to this mod, and any related mod.[/h3]
-description=(This will force a download of the latest version.)
-description=[b]If the problem persists, please supply a error log, which can be found here:[/b]
-description=[quote]`C:\Users\<username>\Zomboid\console.txt`[/quote]
-description=Uploaded to any online text viewer, [url=https://pastebin.com/]pastebin[/url] is recomended.
-description=Share the link in a comment below.
-description=
-description=[url=https://github.com/ChuckTheSheep/SwapIt]Github for SwapIt[/url]
 description=[b]Supports:[/b] G.E.A.R., AuthenticZ, FancyHandwork
-description=[b]Warning:[/b] Other mods that interact with hotslots or item equipping may cause issues- please post a comment describing the issue and any mods you may also use. Patches for said mods may be possible.
+description=[b]Warning:[/b] Other mods that interact with hotslots or item equipping may cause issues - please post a comment describing the issue and any mods you may also use. Patches for said mods may be possible.
 description=
 description=
-description=[table][tr][td]Copyright 2021 Chuck & nurver. This item is not authorized for posting on Steam, except under the Steam account(s) [url=https://steamcommunity.com/id/Chuckleberry_Finn]Chuckleberry_Finn[/url] & [url=https://steamcommunity.com/id/itsmedirtydan]itsmedirtydan[/url].[/td][/tr][/table]
-description=[table][tr][td][h3]Redistribution of this mod without explicit permission from the original creator(s) is prohibited under any circumstances. This includes, but is not limited to, uploading this mod to the Steam Workshop or any other site, redistribution as part of another mod, mod pack, server pack or the distribution of modified versions.[/h3][/td][/tr][/table]
 description=
+description=[h3]Copyright 2021 Chuck & nurver. This item is not authorized for posting on Steam, except under the Steam account(s) [url=https://steamcommunity.com/id/Chuckleberry_Finn]Chuckleberry_Finn[/url] & [url=https://steamcommunity.com/id/itsmedirtydan]itsmedirtydan[/url].[/h3]
+description=[h3]Redistribution of this mod without explicit permission from the original creator(s) is prohibited under any circumstances. This includes, but is not limited to, uploading this mod to the Steam Workshop or any other site, redistribution as part of another mod, mod pack, server pack or the distribution of modified versions.[/h3]
 tags=Build 41;Interface;Multiplayer;Weapons
 visibility=public
