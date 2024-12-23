@@ -4,3 +4,7 @@ B42:
 - No longer needs EasyConfigChucked.
 - Fixed alert issue.
 [ ------ ]
+
+[ 12/23/24 ]
+- Added upto 10 slots.
+[ ------ ]

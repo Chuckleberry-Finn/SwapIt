@@ -1,5 +1,8 @@
 require("Hotbar/ISHotbar")
 
+local gearCore = getActivatedMods():contains("GEARCORE")
+local fancyHandwork = getActivatedMods():contains("FancyHandwork")
+
 local options = PZAPI.ModOptions:getOptions("SwapIt")
 ------ local option = options:getOption("SwapItSlot_"..slot.."_SwapWithHeld")
 ------ local option = options:getOption("SwapItSlot_"..slot.."_DirectAdd")
@@ -14,7 +17,7 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 			if slot then
 
 				--- FancyHandwork PATCH --- If the mod is enabled and its ModKey is pressed
-				if SwapItActiveMods["FancyHandwork"] and isFHModKeyDown() then
+				if fancyHandwork and isFHModKeyDown() then
 					-- Get the secondary item
 					item = self.chr:getSecondaryHandItem()
 				else
@@ -33,7 +36,7 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 	-------------------------------------------------------
 
 	------ GEAR PATCH -------------------------------------
-	if SwapItActiveMods["GEARCORE"] then
+	if gearCore then
 
 		if item:getCategory() == "Clothing" then
 			if item:isEquipped() then
@@ -72,7 +75,7 @@ function ISHotbar:equipItem(item) --hotbar equip logic - called after activating
 	ISInventoryPaneContextMenu.transferIfNeeded(self.chr, item)
 
 	--- FancyHandwork PATCH --- true if Mod is installed and its ModKey is pressed. false or nil otherwise ---
-	local mod = (SwapItActiveMods["FancyHandwork"] and isFHModKeyDown())
+	local mod = (fancyHandwork and isFHModKeyDown())
 
 	local equip = true
 	if self.chr:getPrimaryHandItem() == item then

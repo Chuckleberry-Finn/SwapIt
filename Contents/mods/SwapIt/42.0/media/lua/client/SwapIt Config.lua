@@ -4,18 +4,10 @@
 ------ local option = options:getOption("SwapItSlot_"..slot.."_SwapWithHeld")
 ------ local option = options:getOption("SwapItSlot_"..slot.."_DirectAdd")
 
-SwapItActiveMods = {}
-local activeModIDs = getActivatedMods()
-for i=1,activeModIDs:size() do
-	local modID = activeModIDs:get(i-1)
-	SwapItActiveMods[modID] = true
-end
-
 local function Config()
 
-	local maxSlots = 5
-	if SwapItActiveMods["Authentic Z - Current"] then maxSlots = 10 end
-	if SwapItActiveMods["GEARCORE"] then maxSlots = 15 end
+	local maxSlots = 10
+	if getActivatedMods():contains("GEARCORE") then maxSlots = 15 end
 
 	local options = PZAPI.ModOptions:create("SwapIt", "SwapIt")
 
