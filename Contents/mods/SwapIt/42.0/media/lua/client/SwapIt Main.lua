@@ -9,8 +9,6 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 
 	--- SwapIt --- check if there is an item equipped and assign it if possible ---
 	if not item then
-		print("SwapItSlot_"..slotIndex.."_DirectAdd "..tostring(options:getOption("SwapItSlot_"..slotIndex.."_DirectAdd")))
-
 		if options:getOption("SwapItSlot_"..slotIndex.."_DirectAdd"):getValue() == true then
 			local slot = self.availableSlot[slotIndex]
 			if slot then
