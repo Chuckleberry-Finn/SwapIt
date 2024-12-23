@@ -9,7 +9,9 @@ description=[*]Activating an empty hotslot will attach the equipped item if poss
 description=[*]Individual hotslots can be toggled via options menu.
 description=[/list]
 description=
-description=[url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting nurver[/b][/url][url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi.png[/img][/url]
+description=[url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting nurver[/b][/url]
+description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi_big.png[/img][/url]
+description=
 description=[url=https://discord.gg/SReMnbV4V7][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/PZmodCommBanner2.png[/img][/url]
 description=
 description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/newRequired.png[/img][/url]
