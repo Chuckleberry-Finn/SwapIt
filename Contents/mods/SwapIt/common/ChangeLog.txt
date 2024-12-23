@@ -2,4 +2,5 @@
 B42:
 - Reformatted to B42! (Big thanks to Dhert!)
 - No longer needs EasyConfigChucked.
+- Fixed alert issue.
 [ ------ ]
