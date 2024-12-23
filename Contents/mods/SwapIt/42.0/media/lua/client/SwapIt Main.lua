@@ -1,12 +1,17 @@
 require("Hotbar/ISHotbar")
 
+local options = PZAPI.ModOptions:getOptions("SwapIt")
+------ local option = options:getOption("SwapItSlot_"..slot.."_SwapWithHeld")
+------ local option = options:getOption("SwapItSlot_"..slot.."_DirectAdd")
+
 function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after hitting 1234(etc) and equips/activates the item in that slot
 	local item = self.attachedItems[slotIndex]
 
 	--- SwapIt --- check if there is an item equipped and assign it if possible ---
 	if not item then
-		local slotIndexID = "direct_Hotbar"..slotIndex
-		if SwapItConfig.config[slotIndexID] == true then
+		print("SwapItSlot_"..slotIndex.."_DirectAdd "..tostring(options:getOption("SwapItSlot_"..slotIndex.."_DirectAdd")))
+
+		if options:getOption("SwapItSlot_"..slotIndex.."_DirectAdd"):getValue() == true then
 			local slot = self.availableSlot[slotIndex]
 			if slot then
 
@@ -105,8 +110,7 @@ function ISHotbar:equipItem(item) --hotbar equip logic - called after activating
 		----- SwapIt start ----- equipped weapon replaces to hotslot called ----
 		local i_slotinuse = item:getAttachedSlot()
 		local slot = self.availableSlot[i_slotinuse]
-		local slotIndexID = "swap_Hotbar"..i_slotinuse
-		if slot and SwapItConfig.config[slotIndexID] == true then
+		if slot and options:getOption("SwapItSlot_"..i_slotinuse.."_SwapWithHeld"):getValue() == true then
 			if primary and not self:isInHotbar(primary) and self:canBeAttached(slot, primary) then
 				self:removeItem(item, false)--false = don't run animation
 				self:attachItem(primary, slot.def.attachments[primary:getAttachmentType()], i_slotinuse, slot.def, true)
