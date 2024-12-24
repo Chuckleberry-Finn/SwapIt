@@ -8,3 +8,7 @@ B42:
 [ 12/23/24 ]
 - Added upto 10 slots.
 [ ------ ]
+
+[ 12/24/24 ]
+- Handles edge case where options may not load.
+[ ------ ]
