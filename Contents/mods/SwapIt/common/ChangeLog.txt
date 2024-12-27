@@ -12,3 +12,7 @@ B42:
 [ 12/24/24 ]
 - Handles edge case where options may not load.
 [ ------ ]
+
+[ 12/26/24 ]
+- Modified options page.
+[ ------ ]

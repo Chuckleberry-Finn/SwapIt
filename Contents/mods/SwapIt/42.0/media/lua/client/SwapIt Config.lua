@@ -18,8 +18,6 @@ local function Config()
 		options:addTickBox("SwapItSlot_"..slot.."_SwapWithHeld", getText("UI_options_SwapIt_Slot", tostring(slot)), true)
 	end
 
-	options:addSeparator()
-
 	options:addTitle(getText("UI_options_SwapIt_DirectAddTitle"))
 	options:addDescription(getText("UI_options_SwapIt_DirectAddDesc"))
 
