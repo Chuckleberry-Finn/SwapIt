@@ -1,6 +1,5 @@
 require("Hotbar/ISHotbar")
 
-local gearCore = getActivatedMods():contains("GEARCORE")
 local fancyHandwork = getActivatedMods():contains("FancyHandwork")
 local options = PZAPI.ModOptions:getOptions("SwapIt")
 
@@ -34,27 +33,6 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 		return
 	end
 	-------------------------------------------------------
-
-	------ GEAR PATCH -------------------------------------
-	if gearCore then
-
-		if item:getCategory() == "Clothing" then
-			if item:isEquipped() then
-				ISTimedActionQueue.add(ISUnequipAction:new(self.chr, item, 50))
-			else
-				ISTimedActionQueue.add(ISWearClothing:new(self.chr, item, 50))
-			end
-			return
-		end
-
-		if item:IsFood() and item:getHungerChange() < 0 then
-			if self.chr:getMoodles():getMoodleLevel(MoodleType.FoodEaten) < 3 or self.chr:getNutrition():getCalories() < 1000 then
-				ISTimedActionQueue.add(ISEatFoodAction:new(self.chr, item, 0.25));
-				return
-			end
-		end
-	end
-	----------------------------------------------------------
 
 	if item:getAttachedSlot() ~= slotIndex then
 		error "item:getAttachedSlot() ~= slotIndex"

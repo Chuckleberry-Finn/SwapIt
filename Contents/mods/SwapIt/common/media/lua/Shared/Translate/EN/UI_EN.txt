@@ -7,4 +7,7 @@ UI_EN = {
     UI_options_SwapIt_DirectAddDesc = "Enable being able to directly add an item to an empty hotslot.",
 
     UI_options_SwapIt_Slot = "Slot %1",
+
+    UI_options_SwapIt_SlotMAX = "Maximum Number of Slots",
+    UI_options_SwapIt_SlotMAXDesc = "Requires game restart to take effect.",
 }

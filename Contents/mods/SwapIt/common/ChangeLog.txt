@@ -22,3 +22,10 @@ link1 = Chuck's Kofi = https://steamcommunity.com/linkfilter/?u=https://ko-fi.co
 link2 = Workshop = https://steamcommunity.com/id/Chuckleberry_Finn/myworkshopfiles/?appid=108600,
 link3 = Github = https://steamcommunity.com/linkfilter/?u=https://github.com/Chuckleberry-Finn,
 [ ------ ]
+
+[ 1/23/25 ]
+- Removed support for GEARCORE (dead mod).
+- Refactored configuration options.
+- Added new options to dictate the max number of slots, requires game restart.
+- Removed PL translation for 42 (outdated)
+[ ------ ]
