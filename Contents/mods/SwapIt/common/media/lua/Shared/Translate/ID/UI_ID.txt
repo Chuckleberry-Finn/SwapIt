@@ -1,0 +1,12 @@
+UI_ID = {
+    UI_options_SwapIt_WithHeldTitle = "Tukar dengan yang Dipegang",
+    UI_options_SwapIt_WithHeldDesc = "Aktifkan penukaran barang dengan barang yang dipegang (jika slot mendukung keduanya).",
+
+    UI_options_SwapIt_DirectAddTitle = "Tambah Langsung",
+    UI_options_SwapIt_DirectAddDesc = "Aktifkan kemampuan untuk menambahkan barang langsung ke slot kosong.",
+
+    UI_options_SwapIt_Slot = "Slot %1",
+
+    UI_options_SwapIt_SlotMAX = "Jumlah Slot Maksimum",
+    UI_options_SwapIt_SlotMAXDesc = "Memerlukan restart permainan untuk diterapkan.",
+}

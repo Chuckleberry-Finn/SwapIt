@@ -1,0 +1,12 @@
+UI_CS = {
+    UI_options_SwapIt_WithHeldTitle = "Vyměnit s Drženým",
+    UI_options_SwapIt_WithHeldDesc = "Povolit výměnu předmětů s drženými předměty (pokud slot podporuje oba).",
+
+    UI_options_SwapIt_DirectAddTitle = "Přímé Přidání",
+    UI_options_SwapIt_DirectAddDesc = "Povolit přímé přidání předmětu do prázdného rychlého slotu.",
+
+    UI_options_SwapIt_Slot = "Slot %1",
+
+    UI_options_SwapIt_SlotMAX = "Maximální Počet Slotů",
+    UI_options_SwapIt_SlotMAXDesc = "Vyžaduje restartování hry pro aplikaci změn.",
+}

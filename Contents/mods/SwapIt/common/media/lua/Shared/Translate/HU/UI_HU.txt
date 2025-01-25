@@ -1,0 +1,12 @@
+UI_HU = {
+    UI_options_SwapIt_WithHeldTitle = "Csere a Tartottal",
+    UI_options_SwapIt_WithHeldDesc = "Engedélyezze a tárgyak cseréjét a tartott tárgyakkal (ha a hely támogatja mindkettőt).",
+
+    UI_options_SwapIt_DirectAddTitle = "Közvetlen Hozzáadás",
+    UI_options_SwapIt_DirectAddDesc = "Engedélyezze a tárgy közvetlen hozzáadását egy üres gyorshelyhez.",
+
+    UI_options_SwapIt_Slot = "Hely %1",
+
+    UI_options_SwapIt_SlotMAX = "Maximális Helyek Száma",
+    UI_options_SwapIt_SlotMAXDesc = "A változtatások életbe lépéséhez újra kell indítani a játékot.",
+}

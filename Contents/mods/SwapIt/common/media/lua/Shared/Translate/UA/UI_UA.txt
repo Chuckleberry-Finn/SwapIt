@@ -1,0 +1,12 @@
+UI_UA = {
+    UI_options_SwapIt_WithHeldTitle = "Замінити з Утримуваним",
+    UI_options_SwapIt_WithHeldDesc = "Увімкнути заміну предметів з утримуваними (якщо слот підтримує обидва).",
+
+    UI_options_SwapIt_DirectAddTitle = "Пряме Додавання",
+    UI_options_SwapIt_DirectAddDesc = "Увімкнути можливість безпосередньо додати предмет до порожнього гарячого слоту.",
+
+    UI_options_SwapIt_Slot = "Слот %1",
+
+    UI_options_SwapIt_SlotMAX = "Максимальна Кількість Слотів",
+    UI_options_SwapIt_SlotMAXDesc = "Необхідно перезапустити гру, щоб застосувати зміни.",
+}

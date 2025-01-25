@@ -29,3 +29,11 @@ link3 = Github = https://steamcommunity.com/linkfilter/?u=https://github.com/Chu
 - Added new options to dictate the max number of slots, requires game restart.
 - Removed PL translation for 42 (outdated)
 [ ------ ]
+
+[ 1/24/25 ]
+- Updated internals to better match B42 changes, fixing issues with activating items.
+- Forced attachItem action to NOT stopOnAim (vanilla bug).
+- Translated the mod to all supported languages.
+
+- B41: Fix PL translation folder/file.
+[ ------ ]

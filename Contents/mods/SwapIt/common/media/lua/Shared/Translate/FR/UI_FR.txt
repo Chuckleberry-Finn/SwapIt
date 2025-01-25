@@ -1,0 +1,12 @@
+UI_FR = {
+    UI_options_SwapIt_WithHeldTitle = "Échanger avec Tenue",
+    UI_options_SwapIt_WithHeldDesc = "Permet d'échanger des objets avec des objets tenus (si l'emplacement prend en charge les deux).",
+
+    UI_options_SwapIt_DirectAddTitle = "Ajout Direct",
+    UI_options_SwapIt_DirectAddDesc = "Permet d'ajouter directement un objet à un emplacement vide.",
+
+    UI_options_SwapIt_Slot = "Emplacement %1",
+
+    UI_options_SwapIt_SlotMAX = "Nombre Maximum d'Emplacements",
+    UI_options_SwapIt_SlotMAXDesc = "Nécessite un redémarrage du jeu pour être effectif.",
+}

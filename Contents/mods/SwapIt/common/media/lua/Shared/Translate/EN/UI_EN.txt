@@ -1,5 +1,4 @@
 UI_EN = {
-
     UI_options_SwapIt_WithHeldTitle = "Swap With Held",
     UI_options_SwapIt_WithHeldDesc = "Enable swapping items with held items (if the slot supports both).",
 

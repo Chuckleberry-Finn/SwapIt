@@ -1,0 +1,12 @@
+UI_PH = {
+    UI_options_SwapIt_WithHeldTitle = "Palitan sa Hawak",
+    UI_options_SwapIt_WithHeldDesc = "Payagan ang pagpapalit ng mga bagay sa mga hawak na bagay (kung sinusuportahan ng slot ang pareho).",
+
+    UI_options_SwapIt_DirectAddTitle = "Direktang Idagdag",
+    UI_options_SwapIt_DirectAddDesc = "Payagan ang direktang pagdagdag ng isang bagay sa isang bakanteng hot slot.",
+
+    UI_options_SwapIt_Slot = "Slot %1",
+
+    UI_options_SwapIt_SlotMAX = "Pinakamataas na Bilang ng Mga Slot",
+    UI_options_SwapIt_SlotMAXDesc = "Kinakailangan ang muling pag-restart ng laro para magkabisa.",
+}

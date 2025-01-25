@@ -1,0 +1,12 @@
+UI_JP = {
+    UI_options_SwapIt_WithHeldTitle = "保持物と交換",
+    UI_options_SwapIt_WithHeldDesc = "保持しているアイテムと交換を有効にします（スロットが両方をサポートしている場合）。",
+
+    UI_options_SwapIt_DirectAddTitle = "直接追加",
+    UI_options_SwapIt_DirectAddDesc = "空のホットスロットにアイテムを直接追加する機能を有効にします。",
+
+    UI_options_SwapIt_Slot = "スロット %1",
+
+    UI_options_SwapIt_SlotMAX = "スロットの最大数",
+    UI_options_SwapIt_SlotMAXDesc = "反映させるにはゲームを再起動する必要があります。",
+}

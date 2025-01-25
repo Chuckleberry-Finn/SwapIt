@@ -1,0 +1,12 @@
+UI_IT = {
+    UI_options_SwapIt_WithHeldTitle = "Scambia con Tenuto",
+    UI_options_SwapIt_WithHeldDesc = "Abilita lo scambio di oggetti con quelli tenuti (se lo slot supporta entrambi).",
+
+    UI_options_SwapIt_DirectAddTitle = "Aggiunta Diretta",
+    UI_options_SwapIt_DirectAddDesc = "Abilita l'aggiunta diretta di un oggetto a uno slot vuoto.",
+
+    UI_options_SwapIt_Slot = "Slot %1",
+
+    UI_options_SwapIt_SlotMAX = "Numero Massimo di Slot",
+    UI_options_SwapIt_SlotMAXDesc = "Richiede il riavvio del gioco per avere effetto.",
+}

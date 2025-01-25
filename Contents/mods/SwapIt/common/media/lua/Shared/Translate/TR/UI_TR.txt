@@ -1,0 +1,13 @@
+UI_TR = {
+    UI_options_SwapIt_WithHeldTitle = "Tutulanla Değiştir",
+    UI_options_SwapIt_WithHeldDesc = "Öğeleri tutulan öğelerle değiştirme özelliğini etkinleştirir (eğer slot her ikisini de destekliyorsa).",
+
+    UI_options_SwapIt_DirectAddTitle = "Doğrudan Ekle",
+    UI_options_SwapIt_DirectAddDesc = "Bir öğeyi doğrudan boş bir sıcak slota ekleme yeteneğini etkinleştirir.",
+
+    UI_options_SwapIt_Slot = "Slot %1",
+
+    UI_options_SwapIt_SlotMAX = "Maksimum Slot Sayısı",
+    UI_options_SwapIt_SlotMAXDesc = "Etkinleştirmek için oyunun yeniden başlatılması gerekir.",
+}
+

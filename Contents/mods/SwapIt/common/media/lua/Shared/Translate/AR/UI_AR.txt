@@ -1,0 +1,12 @@
+UI_AR = {
+    UI_options_SwapIt_WithHeldTitle = "تبديل مع المحتجز",
+    UI_options_SwapIt_WithHeldDesc = "تمكين تبديل العناصر مع العناصر المحتجزة (إذا كان الفتحة تدعم كليهما).",
+
+    UI_options_SwapIt_DirectAddTitle = "إضافة مباشرة",
+    UI_options_SwapIt_DirectAddDesc = "تمكين القدرة على إضافة عنصر مباشرة إلى فتحة فارغة.",
+
+    UI_options_SwapIt_Slot = "فتحة %1",
+
+    UI_options_SwapIt_SlotMAX = "العدد الأقصى من الفتحات",
+    UI_options_SwapIt_SlotMAXDesc = "يتطلب إعادة تشغيل اللعبة لتطبيق التغييرات.",
+}

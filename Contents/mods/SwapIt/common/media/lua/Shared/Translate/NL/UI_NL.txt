@@ -1,0 +1,12 @@
+UI_NL = {
+    UI_options_SwapIt_WithHeldTitle = "Wisselen met Gehouden",
+    UI_options_SwapIt_WithHeldDesc = "Schakelt het wisselen van items met gehouden items in (als de slot beide ondersteunt).",
+
+    UI_options_SwapIt_DirectAddTitle = "Direct Toevoegen",
+    UI_options_SwapIt_DirectAddDesc = "Schakelt de mogelijkheid in om een item direct toe te voegen aan een lege snelkoppeling.",
+
+    UI_options_SwapIt_Slot = "Slot %1",
+
+    UI_options_SwapIt_SlotMAX = "Maximaal Aantal Slots",
+    UI_options_SwapIt_SlotMAXDesc = "Vereist een herstart van het spel om effect te hebben.",
+}

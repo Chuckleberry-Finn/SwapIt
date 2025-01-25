@@ -1,0 +1,12 @@
+UI_CH = {
+    UI_options_SwapIt_WithHeldTitle = "與持有物交換",
+    UI_options_SwapIt_WithHeldDesc = "啟用與持有物品進行交換（如果插槽支持兩者）。",
+
+    UI_options_SwapIt_DirectAddTitle = "直接添加",
+    UI_options_SwapIt_DirectAddDesc = "啟用直接將物品添加到空熱插槽中。",
+
+    UI_options_SwapIt_Slot = "插槽 %1",
+
+    UI_options_SwapIt_SlotMAX = "最大插槽數量",
+    UI_options_SwapIt_SlotMAXDesc = "需要重新啟動遊戲以生效。",
+}

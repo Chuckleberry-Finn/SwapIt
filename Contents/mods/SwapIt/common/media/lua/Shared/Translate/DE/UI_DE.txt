@@ -1,0 +1,12 @@
+UI_DE = {
+    UI_options_SwapIt_WithHeldTitle = "Mit Gehaltenem Tauschen",
+    UI_options_SwapIt_WithHeldDesc = "Ermöglicht das Tauschen von Gegenständen mit gehaltenen Gegenständen (wenn der Slot beide unterstützt).",
+
+    UI_options_SwapIt_DirectAddTitle = "Direktes Hinzufügen",
+    UI_options_SwapIt_DirectAddDesc = "Ermöglicht das direkte Hinzufügen eines Gegenstands zu einem leeren Hot-Slot.",
+
+    UI_options_SwapIt_Slot = "Slot %1",
+
+    UI_options_SwapIt_SlotMAX = "Maximale Anzahl von Slots",
+    UI_options_SwapIt_SlotMAXDesc = "Erfordert einen Neustart des Spiels, um wirksam zu werden.",
+}

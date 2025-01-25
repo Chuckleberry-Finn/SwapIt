@@ -1,0 +1,12 @@
+UI_NO = {
+    UI_options_SwapIt_WithHeldTitle = "Bytt med Holdt",
+    UI_options_SwapIt_WithHeldDesc = "Aktiverer bytting av gjenstander med holdte gjenstander (hvis sloten støtter begge).",
+
+    UI_options_SwapIt_DirectAddTitle = "Direkte Legg Til",
+    UI_options_SwapIt_DirectAddDesc = "Aktiverer muligheten til å legge til en gjenstand direkte i en tom hurtigslot.",
+
+    UI_options_SwapIt_Slot = "Slot %1",
+
+    UI_options_SwapIt_SlotMAX = "Maksimalt Antall Slotter",
+    UI_options_SwapIt_SlotMAXDesc = "Krever at spillet startes på nytt for å tre i kraft.",
+}

@@ -1,0 +1,12 @@
+UI_CA = {
+    UI_options_SwapIt_WithHeldTitle = "Intercanvia amb el Subjecte",
+    UI_options_SwapIt_WithHeldDesc = "Habilitar l'intercanvi d'objectes amb objectes subjectes (si la ranura admet ambdós).",
+
+    UI_options_SwapIt_DirectAddTitle = "Afegeix Directament",
+    UI_options_SwapIt_DirectAddDesc = "Permet afegir un objecte directament a una ranura buida.",
+
+    UI_options_SwapIt_Slot = "Ranura %1",
+
+    UI_options_SwapIt_SlotMAX = "Nombre Màxim de Ranures",
+    UI_options_SwapIt_SlotMAXDesc = "Requereix reiniciar el joc per aplicar els canvis.",
+}

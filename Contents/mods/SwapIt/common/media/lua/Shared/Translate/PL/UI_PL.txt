@@ -1,0 +1,12 @@
+UI_PL = {
+    UI_options_SwapIt_WithHeldTitle = "Zamień z Trzymanym",
+    UI_options_SwapIt_WithHeldDesc = "Włącz wymianę przedmiotów z trzymanymi przedmiotami (jeśli slot obsługuje oba).",
+
+    UI_options_SwapIt_DirectAddTitle = "Bezpośrednie Dodanie",
+    UI_options_SwapIt_DirectAddDesc = "Włącz możliwość bezpośredniego dodania przedmiotu do pustego slotu.",
+
+    UI_options_SwapIt_Slot = "Slot %1",
+
+    UI_options_SwapIt_SlotMAX = "Maksymalna Liczba Slotów",
+    UI_options_SwapIt_SlotMAXDesc = "Wymaga ponownego uruchomienia gry, aby zadziałało.",
+}

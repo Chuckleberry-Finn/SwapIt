@@ -1,0 +1,12 @@
+UI_TH = {
+    UI_options_SwapIt_WithHeldTitle = "สลับกับที่ถือ",
+    UI_options_SwapIt_WithHeldDesc = "เปิดใช้งานการสลับไอเทมกับไอเทมที่ถืออยู่ (หากช่องรองรับทั้งสอง).",
+
+    UI_options_SwapIt_DirectAddTitle = "เพิ่มโดยตรง",
+    UI_options_SwapIt_DirectAddDesc = "เปิดใช้งานความสามารถในการเพิ่มไอเทมโดยตรงไปยังช่องว่าง.",
+
+    UI_options_SwapIt_Slot = "ช่อง %1",
+
+    UI_options_SwapIt_SlotMAX = "จำนวนช่องสูงสุด",
+    UI_options_SwapIt_SlotMAXDesc = "จำเป็นต้องรีสตาร์ทเกมเพื่อให้มีผล.",
+}

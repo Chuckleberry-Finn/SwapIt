@@ -1,0 +1,12 @@
+UI_ES = {
+    UI_options_SwapIt_WithHeldTitle = "Intercambiar con Sostenido",
+    UI_options_SwapIt_WithHeldDesc = "Permitir el intercambio de objetos con objetos sostenidos (si el espacio lo permite).",
+
+    UI_options_SwapIt_DirectAddTitle = "Añadir Directo",
+    UI_options_SwapIt_DirectAddDesc = "Permitir agregar un objeto directamente a un espacio vacío.",
+
+    UI_options_SwapIt_Slot = "Espacio %1",
+
+    UI_options_SwapIt_SlotMAX = "Número Máximo de Espacios",
+    UI_options_SwapIt_SlotMAXDesc = "Requiere reiniciar el juego para que surta efecto.",
+}

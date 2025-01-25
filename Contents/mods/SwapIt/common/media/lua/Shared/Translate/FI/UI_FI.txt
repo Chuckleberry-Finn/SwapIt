@@ -1,0 +1,12 @@
+UI_FI = {
+    UI_options_SwapIt_WithHeldTitle = "Vaihda Pidetyn Kanssa",
+    UI_options_SwapIt_WithHeldDesc = "Ota käyttöön esineiden vaihtaminen pidettyjen esineiden kanssa (jos paikka tukee molempia).",
+
+    UI_options_SwapIt_DirectAddTitle = "Suora Lisääminen",
+    UI_options_SwapIt_DirectAddDesc = "Ota käyttöön mahdollisuus lisätä esine suoraan tyhjään pikapaikkaan.",
+
+    UI_options_SwapIt_Slot = "Paikka %1",
+
+    UI_options_SwapIt_SlotMAX = "Paikkojen Enimmäismäärä",
+    UI_options_SwapIt_SlotMAXDesc = "Vaatii pelin uudelleenkäynnistyksen, jotta se astuu voimaan.",
+}

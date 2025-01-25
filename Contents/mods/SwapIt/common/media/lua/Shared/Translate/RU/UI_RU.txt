@@ -1,0 +1,12 @@
+UI_RU = {
+    UI_options_SwapIt_WithHeldTitle = "Обмен с Держимым",
+    UI_options_SwapIt_WithHeldDesc = "Включить обмен предметами с удерживаемыми предметами (если слот поддерживает оба).",
+
+    UI_options_SwapIt_DirectAddTitle = "Прямое Добавление",
+    UI_options_SwapIt_DirectAddDesc = "Включить возможность напрямую добавлять предмет в пустой горячий слот.",
+
+    UI_options_SwapIt_Slot = "Слот %1",
+
+    UI_options_SwapIt_SlotMAX = "Максимальное Количество Слотов",
+    UI_options_SwapIt_SlotMAXDesc = "Требуется перезапуск игры для вступления в силу.",
+}
