@@ -9,6 +9,18 @@ description=[*]Activating an empty hotslot will attach the equipped item if poss
 description=[*]Individual hotslots can be toggled via options menu.
 description=[/list]
 description=
+description=
+description=[h3][b]Required Mods:[/b][/h3]
+description=[quote][b]In B41:[/b]
+description= - EasyConfig is offers options  for customization.
+description= - Both ErrorMag and Modding Alerts are optional.
+description=[/quote]
+description=[quote][b]In B42:[/b]
+description=- EasyConfig is not usable/needed, the game now has native mod options.
+description=- ErrorMag and Alerts are required.
+description=[/quote]
+description=
+description=
 description=[url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting nurver[/b][/url]
 description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi_big.png[/img][/url]
 description=
