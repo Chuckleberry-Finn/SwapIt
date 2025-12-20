@@ -37,3 +37,7 @@ link3 = Github = https://steamcommunity.com/linkfilter/?u=https://github.com/Chu
 
 - B41: Fix PL translation folder/file.
 [ ------ ]
+
+[ 12/19/25 ]
+- Tested on B42.13 with no apparent issues.
+[ ------ ]
