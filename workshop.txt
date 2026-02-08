@@ -29,11 +29,8 @@ description=
 description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/newRequired.png[/img][/url]
 description=
 description=[img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/noModPacks.png[/img]
-description=[img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/bugHunt.png[/img]
-description=[quote][b]Windows:[/b] %userprofile%\Zomboid\console.txt[/quote]
-description=[quote][b]Mac/Linux:[/b] $User\Zomboid\console.txt[/quote]
-description=Upload this file [b]in entirety[/b] to [url=https://github.com/Chuckleberry-Finn/SwapIt]Github[/url] as an issue.
-description=Share the link in a comment below if it is urgent.
+description=
+description=[url=https://chuckleberry-finn.github.io/issues/][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/bugHunt.png[/img][/url]
 description=
 description=[b]Supports:[/b] G.E.A.R., AuthenticZ, FancyHandwork
 description=[b]Warning:[/b] Other mods that interact with hotslots or item equipping may cause issues - please post a comment describing the issue and any mods you may also use. Patches for said mods may be possible.
