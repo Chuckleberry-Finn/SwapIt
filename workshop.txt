@@ -37,7 +37,7 @@ description=[b]Warning:[/b] Other mods that interact with hotslots or item equip
 description=
 description=
 description=
-description=[url=https://indifferentbroccoli.com/project-zomboid-server-hosting?fpr=chuckleberry][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/refs/heads/main/IB_BANNER/IB_BANNER.gif[/img][/url]
+description=[b][i][h1] [/h1][/i][/b]
 description=
 description=
 description=[h3]Copyright 2026 Chuck & nurver. This item is not authorized for posting on Steam, except under the Steam account(s) [url=https://steamcommunity.com/id/Chuckleberry_Finn]Chuckleberry_Finn[/url] & [url=https://steamcommunity.com/id/itsmedirtydan]itsmedirtydan[/url].[/h3]

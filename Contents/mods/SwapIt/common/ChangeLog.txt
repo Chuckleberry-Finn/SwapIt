@@ -43,5 +43,9 @@ link3 = Github = https://steamcommunity.com/linkfilter/?u=https://github.com/Chu
 [ ------ ]
 
 [ 3/25/26 ]
-- B42.15 Json Translations
+- B42.15 Json Translations.
+[ ------ ]
+
+[ 8/7/26 ]
+- Updated minor functions to B42. Fixes stuck items. (QuillVest)
 [ ------ ]
