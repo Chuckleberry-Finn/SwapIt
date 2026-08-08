@@ -12,8 +12,8 @@ description=
 description=
 description=[h3][b]Required Mods:[/b][/h3]
 description=[quote][b]In B41:[/b]
-description= - EasyConfig offers options for customization.
-description= - Both ErrorMag and Modding Alerts are optional.
+description= - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2529746725]EasyConfig offers options for customization. [link][/url]
+description= - Both ErrorMag and Modding Alerts are optional [b]FOR B41[/b].
 description=[/quote]
 description=[quote][b]In B42:[/b]
 description=- EasyConfig is not usable/needed, the game now has native mod options.
