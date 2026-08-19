@@ -49,3 +49,7 @@ link3 = Github = https://steamcommunity.com/linkfilter/?u=https://github.com/Chu
 [ 8/7/26 ]
 - Updated minor functions to B42. Fixes stuck items. (QuillVest)
 [ ------ ]
+
+[ 8/18/26 ]
+- Updated internals for MP syncing (Bjørn)
+[ ------ ]

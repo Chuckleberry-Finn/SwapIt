@@ -69,6 +69,7 @@ function ISHotbar:activateSlot(slotIndex) -- hotbar equip logic - called after h
 
 	if item:canBeActivated() and (not instanceof(item, "HandWeapon")) then
 		item:setActivated(not item:isActivated())
+		syncItemActivated(self.chr, item)
 		item:playActivateDeactivateSound()
 		return
 	end
@@ -135,8 +136,12 @@ function ISHotbar:equipItem(item) --hotbar equip logic - called after activating
 			end
 			---------------------------------------------------------------------
 		end
-		--- FancyHandwork PATCH --- Use the "mod" variable instead of always true
-		ISTimedActionQueue.add(ISEquipWeaponAction:new(self.chr, item, 20, not _fh, both_hands))
+		local equipPrimary = both_hands or item:IsWeapon()
+		if not equipPrimary and self.chr:getSecondaryHandItem() and not self.chr:getPrimaryHandItem() then
+			equipPrimary = true
+		end
+		if _fh then equipPrimary = not equipPrimary end
+		ISTimedActionQueue.add(ISEquipWeaponAction:new(self.chr, item, 20, equipPrimary, both_hands))
 
 	elseif instanceof(item, "HandWeapon") and item:canBeActivated() then
 		item:setActivated(false)
